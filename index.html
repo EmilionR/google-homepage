@@ -8,7 +8,14 @@
             color: #222;
         }
         #navbar{
-            display: block;
+            display: flex;
+            align-items: center;
+        }
+        #navleft{
+            display: flex;
+        }
+        #navright{
+            display: flex;
         }
         ul {
             list-style-type: none;
@@ -19,9 +26,8 @@
         img{
             padding-top: 109px;
             display: block;
-            width: 40%;
-            margin-left: 30%;
-            margin-right: 30%;
+            margin-left: auto;
+            margin-right: auto;
             
         }
         
@@ -45,7 +51,7 @@
         #searchbar{
             display: block;
             height: 40px;
-            width: 60%;
+            width: 45%;
             margin-left: auto;
             margin-right: auto;
             background-color: transparent;
@@ -58,8 +64,8 @@
             font-size: 25px;
             line-height: 40px;
             margin-top: 20px;
-            padding-right: 10px;
-            padding-left: 10px;
+            padding-right: 20px;
+            padding-left: 20px;
         }
         #buttons{
             display: block;
@@ -81,11 +87,20 @@
 </head>
 <body>
     <nav id="navbar">
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Store</a></li>
-        </ul>
-        
+        <div id="navleft">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+            </ul>
+        </div>
+        <div id="navright">
+            <ul>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">Box</a></li>
+                <li><a href="#">Pic</a></li>
+            </ul>
+        </div>
     </nav>
         <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></img> 
         <input type="text" placeholder="&#128269;" id="searchbar">
