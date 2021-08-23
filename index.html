@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google homepage</title>
+    <style>
+        body{
+            color: #222;
+        }
+        #navbar{
+            display: block;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            }
+
+        img{
+            padding-top: 109px;
+            display: block;
+            width: 40%;
+            margin-left: 30%;
+            margin-right: 30%;
+            
+        }
+        
+        li{
+            display: inline;
+            font-family: sans-serif;
+            font-size: 14px;
+            margin: 5px;
+            float: left;
+        }
+        a{
+            color: #555;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            height: 35px;
+            width: 100%;
+            background-color: #eee;
+        }
+        #searchbar{
+            display: block;
+            height: 40px;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: transparent;
+            border: 2px solid;
+            border-color: #eee;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 20px;
+            outline: none;
+            font-family: arial, sans-serif;
+            font-size: 25px;
+            line-height: 40px;
+            margin-top: 20px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        #buttons{
+            display: block;
+            width: 70%;
+            margin-left: auto;
+        }
+        .searchbutton{
+            height: 40px;
+            width: 30%;
+            border: none;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            margin-top: 10px;
+            padding: 0 16px; 
+        }
+        
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+        </ul>
+        
+    </nav>
+        <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></img> 
+        <input type="text" placeholder="&#128269;" id="searchbar">
+        <div id="buttons">
+            <input type="submit" value="Google Search" class="searchbutton"></input>
+            <input type="submit" value="I'm Feeling Lucky" class="searchbutton"></input>
+        </div>
+         <footer>
+        <ul>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search works</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
