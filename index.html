@@ -60,37 +60,63 @@
         }
 
         form{
+            display: block;
             position: relative;
+            width: 50vw;
+            max-width: 450;
+            min-width: 350;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            padding: 0px;
         }
         
+        #icons{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 58px;
+            padding-left: 10px;
+            padding-right: 10px;
+            pointer-events:none;
+        }
+        #searchIcon{
+            display: flex;
+            flex-direction: row;
+            justify-self: start;
+            opacity: 50%;
+        }
+        #micIcon{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            opacity: 50%;
+            margin-right: 20px;
+            margin-left: 10px;
+        }
+        #keyboardIcon{
+            margin-left: auto;
+            opacity: 50%;
+        }
         #searchbar{
             display: block;
             height: 40px;
-            width: 50vw;
-            max-width: 450;
-            margin-left: auto;
-            margin-right: auto;
+            width: 100%;
             background-color: transparent;
             border: 2px solid;
             border-color: #eee;
             -webkit-border-radius: 25px;
             -moz-border-radius: 20px;
+            border-radius: 20px;
             outline: none;
             font-family: arial, sans-serif;
             font-size: 25px;
             line-height: 40px;
             margin-top: 20px;
-            /*
-            background-image: url(img/searchIcon.png);
-            background-position: 10px 10px; 
-            background-repeat: no-repeat;
-            
-            */
-            padding: 0px 40px 0px 40px;
-        }
-
-        #searchIcon{
-            
+            padding: 0px 65px 0px 40px;
+            box-sizing: border-box;
+            font-size: 16px;  
         }
 
         #buttons{
@@ -176,9 +202,12 @@
 
         <form>
             <input type="text" id="searchbar">
-            <img src="img/searchIcon.png" id="searchIcon">
-            <img src="img/micIcon.png" id="micIcon">
-            <img src="img/keyboardIcon.png" id="keyboardIcon">
+            <div id="icons">
+                <img src="img/searchIcon.png" id="searchIcon">
+                <img src="img/keyboardIcon.png" id="keyboardIcon">
+                <img src="img/micIcon.png" id="micIcon">
+            </div>
+
             <div id="buttons">
                 <input type="submit" value="Google Search" class="searchbutton"></input>
                 <input type="submit" value="I'm Feeling Lucky" class="searchbutton"></input>
